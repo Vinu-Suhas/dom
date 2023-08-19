@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles.css">          
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // var a=document.getElementById('newid1')
+
+    // console.log(a.innerHTML)
+    function enableQ1(){
+    // let continaer=document.getElementsByClassName('container1')   
+    // let  q1=continaer.getElementById('newid1');
+    let  q1=document.getElementById('newid1');
+    // let  q1=document.querySelectorAll('container1.newid1');
+    q1.innerText="The element is accesed ";
+    q1.style.color="red";
+    }
+    function resetQ1(){
+    let  q1=document.getElementById('newid1');
+    q1.innerText="The element is not accesed";
+    q1.style.color="black";
+    
+    }
+    function enableQ2(){
+        document.getElementsByTagName('h1')[0].innerText="The Element value has been changed"
+        document.getElementsByTagName('h1')[0].style.color="red"
+    }
+    function resetQ2(){
+        document.getElementsByTagName('h1')[0].innerText="The element is not accesed"
+        document.getElementsByTagName('h1')[0].style.color="black"
+
+    }
+    function enableQ3(){
+        document.getElementsByClassName('box')[0].innerText="The Element value has been changed"
+        document.getElementsByClassName('box')[0].style.color="red"
+    }
+    function resetQ3(){
+        document.getElementsByClassName('box')[0].innerText="The element is not accesed"
+        document.getElementsByClassName('box')[0].style.color="black"
+
+    }
+    function enableQ4(){
+        let a=document.getElementsByTagName('h1')
+        for(let i=0;i<a.length;i++){
+            console.log(a[i])
+            if(a[i].innerText=="Hello"){
+                a[i].innerText="Hello World"
+                break
+            }
+        }
+    }
+    function resetQ4(){
+        let a=document.getElementsByTagName('h1')
+        for(let i=0;i<a.length;i++){
+            console.log(a[i].innerText)
+            if(a[i].innerText=="Hello World"){
+                a[i].innerText="Hello"
+                break
+            }
+        }
+    }
+    function enableQ5(){
+        let a=document.getElementsByTagName('h1')
+        for(let i=0;i<a.length;i++){
+            console.log(a[i].innerText)
+            if(a[i].innerText=="Hello world"){
+                a[i].innerText="Welcome to Elevation academy"  
+                break
+            }
+        }
+    }
+    function resetQ5(){
+        let a=document.getElementsByTagName('h1')
+        for(let i=0;i<a.length;i++){
+            console.log(a[i].innerText)
+            if(a[i].innerText=="Welcome to Elevation academy"  ){
+                a[i].innerText="Hello world"
+                break
+            }
+        }
+    }
+</script>
+    <fieldset class="container1">
+        <p >&nbsp;1.Write the code to access element which is having id as "text" &nbsp;</p>
+        <p id="newid1">The element is not accesed</p>
+        <pre>
+            let variable_name=document.getElementById('id_name')
+        </pre>
+
+        <button class="enable"  onclick="enableQ1()">Test function</button>
+        <button class="reset"   onclick="resetQ1()">Reset function</button>
+    </fieldset>
+    <fieldset>
+        <p >&nbsp;2.Write the code to access element which is having tag as "h1" &nbsp;</p>
+        <h1>The element is not accesed</h1>
+        <pre>
+            document.getElementsByTagName('h1')[0]
+        </pre>
+
+        <button class="enable"  onclick="enableQ2()">Test function</button>
+        <button class="reset"   onclick="resetQ2()">Reset function</button>
+    </fieldset>
+    <fieldset>
+        <p >&nbsp;3.Write the code to access element which is having class as "box" &nbsp;</p>
+        <p class="box">The element is not accesed</p>
+        <pre>
+            document.getElementsByClassName('box')[0]
+        </pre>
+
+        <button class="enable"  onclick="enableQ3()">Test function</button>
+        <button class="reset"   onclick="resetQ3()">Reset function</button>
+    </fieldset>
+    <fieldset>
+        <p >&nbsp;4." &lt;h1&gt;Hello &lt;/h1&gt;"
+
+            Change the heading from ""Hello"" to ""Hello World"" using DOM functions" &nbsp;</p>
+        <h1>Hello</h1>
+        <pre>
+            document.getElementsByClassName('box')
+        </pre>
+
+        <button class="enable"  onclick="enableQ4()">Test function</button>
+        <button class="reset"   onclick="resetQ4()">Reset function</button>
+    </fieldset>
+    <fieldset>
+        <p >&nbsp;5.Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy" &nbsp;</p>
+        <h1>Hello world</h1>
+        <pre>
+            document.getElementsByClassName('box')
+        </pre>
+
+        <button class="enable"  onclick="enableQ5()">Replace text</button>
+        <button class="reset"   onclick="resetQ5()">Reset function</button>
+    </fieldset>
+</body>
+</html>

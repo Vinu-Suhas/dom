@@ -1,0 +1,28 @@
+*{
+    font-family: Verdana, sans-serif;
+    
+                                                
+                                                
+}
+body{
+    background-color: #457b9d;
+}
+button{
+    border-radius: 100px;
+    padding: 15px;
+    border: 10px solid #F1FAEE;
+}
+.enable{
+    background-color: #848C8E;
+}
+.reset{
+    background-color: #A8DADC;
+}
+pre{
+    font-family: 'Space Mono', monospace;
+}
+fieldset{
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+}
