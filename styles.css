@@ -32,3 +32,10 @@ img{
     border-radius: 20px;
     margin:10px
 }
+
+.time_formatting{
+    font-size: 30px;
+    text-align: center;
+    color: darkviolet;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
