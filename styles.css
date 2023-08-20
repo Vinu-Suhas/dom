@@ -26,3 +26,9 @@ fieldset{
     border-radius: 20px;
     margin-top: 10px;
 }
+img{
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    margin:10px
+}
